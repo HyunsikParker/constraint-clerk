@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.sanity/
+*.token
+*credentials*.json
+coverage/
+studio/node_modules/
+studio/dist/

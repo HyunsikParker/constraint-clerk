@@ -1,0 +1,32 @@
+{
+  "name": "constraint-clerk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {"node": ">=22.12.0"},
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5289 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "agent:probe": "node --experimental-strip-types scripts/probe.ts",
+    "agent:serve": "node --experimental-strip-types server/index.ts",
+    "seed": "node --experimental-strip-types scripts/seed.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "1.0.90",
+    "@ai-sdk/react": "3.0.303",
+    "ai": "6.0.300",
+    "content-agent": "1.3.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.15",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.2"
+  }
+}
